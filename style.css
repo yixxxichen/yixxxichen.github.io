@@ -36,8 +36,8 @@ li{
 }
 .nav-button{
     color:white;
-    font-size:18px;
-    padding: 1em 4em;
+    padding: 1em 3em;
+    font-size: 18px;
     text-decoration: none;
     display: inline-block;
 }
@@ -67,7 +67,6 @@ li{
 	height: 72px;
 	position: absolute;
 	left: 50%;
-	margin-left: -30px;
 	bottom:7.5%;
     transform: translateX(-50%);
 }
@@ -166,10 +165,13 @@ img{
     font-size: 2.5em;
 }
 /* Medium screens */
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .nav-bar {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;
+  }
+  .nav-button{
+      padding: 1em;
   }
 }
 
@@ -178,5 +180,8 @@ img{
   .nav-bar {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
+  }
+  .nav-button{
+      padding:0.25em;
   }
 }
