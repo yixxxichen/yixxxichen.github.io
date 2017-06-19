@@ -1,9 +1,9 @@
-/*html{
+html{
     box-sizing: border-box;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
-}*/
+}
 .container{
     margin: 0 auto;
 }
@@ -27,7 +27,12 @@ li{
     overflow: hidden;
     position:fixed;
     z-index: 1;
-    font-size: 0;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    padding-left:0px;
+    left:0px; 
+    right:0px;
 }
 .nav-button{
     color:white;
@@ -159,4 +164,19 @@ img{
 }
 #projectheader h1{
     font-size: 2.5em;
+}
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .nav-bar {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .nav-bar {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
