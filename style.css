@@ -140,7 +140,7 @@ li{
     color: black;
     text-align: center;
     position:relative;
-    margin-top:80px;
+    margin-top:100px;
 }
 
 #aboutheader h1{
@@ -156,10 +156,11 @@ li{
 }
 #aboutimage{
     margin-top:150px;
-    margin-left:100px;
+    margin-left:80px;
     z-index: 0;
+
 }
-img{
+#selfie{
     width:20em;
     height:28em;
 }
@@ -180,7 +181,7 @@ img{
     font-size: 2.5em;
 }
 /* Medium screens */
-@media all and (max-width: 900px) {
+@media all and (max-width: 950px) {
   .nav-bar {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;
@@ -188,8 +189,25 @@ img{
   .nav-button{
       padding: 1em;
   }
+  #aboutwords{
+      margin-right: 0;
+  }
+  #aboutimage{
+      margin-left: 0;
+  }
 }
-
+@media all and (max-width: 800px) {
+    #aboutimage{
+        margin-top:220px;
+    }
+     #selfie{
+         width:15em;
+         height:20em;
+     }
+    #aboutcontent p{
+        padding:0.25em;
+    }
+}
 /* Small screens */
 @media all and (max-width: 540px) {
   #homepageheader{
