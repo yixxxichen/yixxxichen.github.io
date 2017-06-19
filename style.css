@@ -1,0 +1,162 @@
+/*html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}*/
+.container{
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    position:relative;
+    width:auto;
+    padding:0px;
+    text-align: center;
+}
+li{
+    float:left;
+    position:relative;
+}
+.nav-bar{
+    width:100%;
+    color:white;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    position:fixed;
+    z-index: 1;
+    font-size: 0;
+}
+.nav-button{
+    color:white;
+    font-size:18px;
+    padding: 1em 4em;
+    text-decoration: none;
+    display: inline-block;
+}
+#homepage .nav-bar ul li a:hover{
+    background-color: lightblue;
+}
+#homepage{
+    background-color: black;
+    display: flex;
+    min-height: 98vh;
+}
+#mainheader{
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+}
+#homepageheader{
+    position:absolute;
+    top:50%;
+    right:.5em;
+    transform: translateY(-50%);
+    font-size: 3.4em;
+}
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom:7.5%;
+    transform: translateX(-50%);
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+#Aboutme{
+    background-color: silver;
+    display: flex;
+    min-height: 98vh;
+}
+#aboutheader{
+    width:13em;
+    color: black;
+    text-align: left;
+    position:relative;
+    margin-top:10%;
+    margin-left:25%;
+}
+
+#aboutheader h1{
+    font-size: 2.5em;
+}
+#aboutcontent{
+    margin-top:5%;
+    margin-left:15%;
+    color:black;
+    width:40%;
+}
+#aboutcontent p{
+    padding:0.5em;
+}
+#aboutimage{
+    position:relative;
+    margin-top: 40%;
+    margin-left:-80%;
+    width:20em;
+    height:28em;
+    z-index: 0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#Projects{
+    background-color: dimgray;
+    display: flex;
+    min-height: 98vh;
+}
+#projectheader{
+    width:13em;
+    color: beige;
+    text-align: left;
+    position:relative;
+    margin-top:18em;
+    margin-left:-35em;
+}
+#projectheader h1{
+    font-size: 2.5em;
+}
