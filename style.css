@@ -114,44 +114,60 @@ li{
     background-color: silver;
     display: flex;
     min-height: 98vh;
+
+}
+#Aboutme .container{
+    flex-flow:row wrap;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+#aboutwords{
+    width:50%;
+    flex-flow:row wrap;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin-right:60px;
 }
 #aboutheader{
-    width:13em;
+    width:auto;
+    height:20px;
     color: black;
-    text-align: left;
+    text-align: center;
     position:relative;
-    margin-top:10%;
-    margin-left:25%;
+    margin-top:80px;
 }
 
 #aboutheader h1{
     font-size: 2.5em;
 }
 #aboutcontent{
-    margin-top:5%;
-    margin-left:15%;
+    text-align: left;
     color:black;
-    width:40%;
+    width:80%;
 }
 #aboutcontent p{
-    padding:0.5em;
+    padding:1em;
 }
 #aboutimage{
-    position:relative;
-    margin-top: 40%;
-    margin-left:-80%;
-    width:20em;
-    height:28em;
+    margin-top:150px;
+    margin-left:100px;
     z-index: 0;
 }
 img{
-    max-width: 100%;
-    max-height: 100%;
+    width:20em;
+    height:28em;
 }
 #Projects{
     background-color: dimgray;
     display: flex;
     min-height: 98vh;
+
 }
 #projectheader{
     width:13em;
@@ -159,7 +175,6 @@ img{
     text-align: left;
     position:relative;
     margin-top:18em;
-    margin-left:-35em;
 }
 #projectheader h1{
     font-size: 2.5em;
@@ -176,12 +191,20 @@ img{
 }
 
 /* Small screens */
-@media all and (max-width: 500px) {
-  .nav-bar {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+@media all and (max-width: 540px) {
+  #homepageheader{
+      font-size: 2em;
   }
   .nav-button{
       padding:0.25em;
+  }
+}
+@media all and (max-width: 400px) {
+     li{
+      float:none;
+    /* On small screens, we are no longer using row direction but column */
+  }
+  .nav-button{
+      padding: 0;
   }
 }
