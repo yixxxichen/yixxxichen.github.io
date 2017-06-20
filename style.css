@@ -5,7 +5,7 @@ html{
 	box-sizing: inherit;
 }
 .container{
-    margin: 0 auto;
+    margin: 0;
 }
 ul {
     list-style-type: none;
@@ -43,6 +43,7 @@ li{
 }
 #homepage .nav-bar ul li a:hover{
     background-color: lightblue;
+    color:black;
 }
 #homepage{
     background-color: black;
@@ -167,18 +168,37 @@ li{
 #Projects{
     background-color: dimgray;
     display: flex;
+    flex-flow:column wrap;
+    justify-content: space-around;
     min-height: 98vh;
 
 }
 #projectheader{
-    width:13em;
+    width:100%;
     color: beige;
-    text-align: left;
+    text-align: center;
     position:relative;
-    margin-top:18em;
+    margin-top:5em;
 }
 #projectheader h1{
     font-size: 2.5em;
+}
+#projects{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.project{
+    padding:12px;
+}
+.projectimage{
+    width:30em;
+    height:20em;
 }
 /* Medium screens */
 @media all and (max-width: 950px) {
