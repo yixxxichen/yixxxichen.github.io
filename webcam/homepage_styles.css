@@ -1,0 +1,79 @@
+#menubar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6494ed;
+    font-size:200%;
+}
+
+
+ #menubar >li{
+ 	float:left;
+ }
+
+ #menubar >li>a{
+ 	display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 36px;
+    text-decoration: none;
+}
+
+#menubar li>a:hover:not(.active) {
+    background-color: aliceblue;
+}
+
+
+
+#menubar>li>a{
+	background-color: #6494ed;
+	color: black;
+
+}
+
+img{
+	padding-top: 20px;
+	display:block;
+	margin:auto;
+	border-radius: 50%;
+	
+}
+
+ img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+p, h1 {
+	color:black;/*grb(255,0,0);*/
+
+	/*change color here 
+	hsl(20, 100%, 200%)\
+	rgba(255,0,0,0.5) ====make the transparent background*/
+
+	text-align: center; 
+}
+
+
+
+body{
+	 background-color: aliceblue;
+	/*background-image: url(../image/board.png); /*注意;这里面必须要../返回上一个界面才行*/	
+}
+
+#productModules{
+	padding:20px, 30px,70px,80px;
+	margin-top:200px;
+	font-size:200%;
+	margin-left:40px;
+	color: blue;
+}
+#itemhtml{
+	font-size:180%;
+	margin-top: 50px;
+	margin-left:20px;
+}
+#ul2{
+	margin-left:30px;
+	font-size: 180%;
+}

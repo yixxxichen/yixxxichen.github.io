@@ -1,0 +1,27 @@
+.navbar {
+	background-color: green;
+	background-image: none;
+	border-color: purple;
+}
+
+.nav.navbar-nav li a {
+  color: #EFD469;
+	font-size: 20px;	
+ }
+
+body {
+	font-size: 14px;
+	/*font-family: Georgia;*/
+	font-style: sans-serif;
+}
+
+a.navbar-brand {
+	color: green !important;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.navbar-header {
+	background-color: #EFD469;
+	background-image: none;
+}

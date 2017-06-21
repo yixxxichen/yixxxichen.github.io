@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- GradsOnTrack.html
+Author:Xia Hua
+-->
+<html>
+<head>
+	<title>GradsOnTrack</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- For the table -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- For the navigation bar -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Personal CSS File -->
+	<link rel="stylesheet" href="GradsOnTrack.css">
+	<link rel="stylesheet" href="MyScores.css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="ApplicationsView.html">&nbsp;&nbsp;GradsOnTrack</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">My Applications</a></li>
+      <li class="active"><a href="#">My Scores</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Account.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      <li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" id="centeredTitle">
+  <h1>My Scores</h1>
+</div>
+
+<table><tbody>
+  <tr class="blank_row"><td colspan="8"></td></tr>
+</tbody></table>
+
+<div class="container">
+  <form class="form-horizontal">
+    <table class="table table-striped">
+      <tr class="blank_row"><td colspan="8"></td></tr>
+      <tr>
+        <td>
+            <div class="form-group">
+              <label class="control-label col-sm-4">GRE</label>
+            </div>
+            <div class="form-group",id="offsetinput">
+              <label class="col-sm-offset-1 col-sm-3">Verbal:</label>
+              <div class="col-sm-4">
+                <input class="form-control" >
+              </div>
+            </div>
+            <div class="form-group",id="offsetinput">
+              <label class="col-sm-offset-1 col-sm-3">Quantitative:</label>
+              <div class="col-sm-4">
+                <input class="form-control" >
+              </div>
+            </div>
+            <div class="form-group",id="offsetinput">
+              <label class="col-sm-offset-1 col-sm-3">Writing:</label>
+              <div class="col-sm-4">
+                <input class="form-control" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4">GPA:</label>
+              <div class="col-sm-4">
+                <input class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4">TOEFL:</label>
+              <div class="col-sm-4">
+                <input class="form-control">
+              </div>
+            </div>
+        </td>
+        <td>
+           <div class="w3-display-container">
+              <img src="./p9.jpg" style="width:80%">
+          </div>
+        </td>
+      </tr>
+      <tr class="blank_row"><td colspan="8"></td></tr>
+      <tr><td colspan="8"></td></tr>
+    </table>
+    <table><tbody>
+      <tr class="blank_row"><td colspan="8"></td></tr>
+      <tr class="blank_row"><td colspan="8"></td></tr>
+      <div class="form-group">
+        <div class="col-sm-5">
+          <a button type="button" class="btn btn-info" href="MyScoresView2.html"><span class="glyphicon glyphicon-save"></span> Save</button></a>
+          <a button type="submit" class="btn btn-default" href="MyScoresView1.html">Cancel</button></a>
+        </div>
+      </div>
+    </tbody></table>
+  </form>
+</div>
+</body>
+</html>

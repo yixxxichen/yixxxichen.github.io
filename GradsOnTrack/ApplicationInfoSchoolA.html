@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<!-- GradsOnTrack.html
+
+This document contains the structure of the GradsOnTrack website.
+
+William Ehrich
+EECS 330: Human Computer Interaction
+P5: Computer Prototype 1
+2017-02-08
+
+Sources:
+
+Bootsrap CDN Links
+http://getbootstrap.com/getting-started/
+
+Bootstrap Glyphicons
+http://getbootstrap.com/components/
+
+Bootstrap Navigation Bar
+http://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+-->
+
+<html>
+
+<head>
+	<title>GradsOnTrack</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+
+	<!-- For the table -->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- For the navigation bar -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- For the date picker -->
+	
+	<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css"> -->
+	<link rel="stylesheet" href="datepicker.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+	
+	<!-- Personal CSS File -->
+	<link rel="stylesheet" href="GradsOnTrack.css">
+	
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="ApplicationsView.html">&nbsp;&nbsp;GradsOnTrack</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">My Applications</a></li>
+      <li><a href="MyScoresView1.html">My Scores</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Account.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      <li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" id="centeredTitle">
+  <h1>Application Info</h1>
+</div>
+
+<div class="container">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2">University:</label>
+      <div class="col-sm-10">
+        <input class="form-control" placeholder="Enter university name" value="School A">
+      </div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2">Subject of Program:</label>
+      <div class="col-sm-10">          
+        <input class="form-control" placeholder="Enter subject of program" value=
+				"Computer Science">
+      </div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2">Type of Program:</label>
+      <div class="col-sm-10">          
+        <label class="radio-inline">
+      <input type="radio" name="optradio">Master's
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>PhD
+    </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Application Deadline:</label>
+      <div class="col-sm-10">          
+        <input class="form-control" placeholder="Enter application deadline" type="text" id="datepicker" value=
+				"3/1/2017">
+      </div>
+    </div>
+		    <div class="form-group">
+      <label class="control-label col-sm-2">Application Fee</label>
+      <div class="col-sm-10">          
+        <input class="form-control" placeholder="Enter application fee" value="$20.00">
+				<div class="checkbox">
+          <label><input type="checkbox" checked> Application fee paid</label>
+        </div>
+			</div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">First Letter of Recommendation:</label>
+      <div class="col-sm-10">          
+        <input class="form-control" placeholder="Enter author" value="Nell O'Rourke">
+				        <div class="checkbox">
+          <label><input type="checkbox" checked> First Letter of Recommendation Sent</label>
+        </div>
+      </div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2">Second Letter of Recommendation</label>
+      <div class="col-sm-10">          
+        <input class="form-control" placeholder="Enter author" value="Michael Horn">
+				        <div class="checkbox">
+          <label><input type="checkbox" checked> Second Letter of Recommendation Sent</label>
+        </div>
+      </div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2">Third Letter of Recommendation</label>
+      <div class="col-sm-10">          
+        <input class="form-control" placeholder="Enter author" value="Larry Henschen">
+				        <div class="checkbox">
+          <label><input type="checkbox" checked> Third Letter of Recommendation Sent</label>
+        </div>
+      </div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2">Additional Deliverables</label>
+      <div class="col-sm-10">          
+				<div class="checkbox">
+          <label><input type="checkbox"> GRE Score Received</label>
+        </div>
+				<div class="checkbox">
+          <label><input type="checkbox" checked> Statement of Purpose Sent</label>
+        </div>
+				<div class="checkbox">
+          <label><input type="checkbox"> Transcript Sent</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+				<a button type="button" class="btn btn-info" href="ApplicationsEdit2.html">
+            <span class="glyphicon glyphicon-save"></span> Save 
+          </button></a>
+          <a button type="submit" class="btn btn-default" href="ApplicationsEdit.html">Cancel</button></a>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+
+</html>

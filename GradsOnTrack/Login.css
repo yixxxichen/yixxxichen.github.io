@@ -1,0 +1,159 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*{margin:0; padding:0}
+body{ 
+	font-family: 'Source Sans Pro', sans-serif
+}
+.form{
+	width:400px; 
+	margin:50px auto; 
+	background:white;
+}
+.header{
+	height:44px; 
+	background:white
+}
+.header h1{
+	margin-top: 50px;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 65px;
+	font-weight: normal;
+}
+.header h2{
+	height:50px; 
+	line-height:44px; 
+	font-weight: normal;
+	font-size: 40px;
+	color:green; 
+	text-align:center;
+}
+.login{
+	padding:0 20px
+}
+.login span.un{
+	width:10%; 
+	text-align:center; 
+	color:green; 
+	border-radius:3px 0 0 3px
+	}
+.text{
+	background:white; 
+	width:90%; 
+	border-radius:0 3px 3px 0; 
+	border:none; 
+	outline:none; 
+	color:black; 
+	font-family: 'Source Sans Pro', sans-serif} 
+.text,.login span.un{
+	display:inline-block; 
+	vertical-align:top; 
+	height:40px; 
+	line-height:40px; 
+	background:white;
+}
+.textbox{
+	border:2px solid green;
+}
+.text:focus {
+	background: LightCyan;
+}
+.btn{
+	height:40px; 
+	border:none; 
+	background:green; 
+	width:50%; 
+	outline:none; 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size:25px; 
+	font-weight:bold; 
+	color:#EFD469; 
+	border-bottom:solid 3px #093; 
+	border-radius:3px; 
+	border:1px solid white;
+	cursor:pointer
+}
+.btn:hover{
+	background-color: 	green;
+	color:white;
+
+}
+.btn:active{
+	transform: translateY(4px);
+}
+ul li{
+	height:40px; 
+	margin:15px 0; 
+	list-style:none}
+
+.span{
+	display:table; 
+	width:100%; 
+	font-size:14px;
+}
+.ch{
+	display:inline-block; 
+	width:50%; 
+	color: #4E2A84;
+}
+.ch a{
+	color: #4E2A84; 
+	text-decoration:none
+}
+.ch:nth-child(2){
+	text-align:right
+}
+.ch a:hover{
+	text-decoration: underline;
+}
+.ch a:active{
+	text-decoration: underline;
+	transform: translateY(2px);
+}
+/*social*/
+.social{
+	height:30px; 
+	line-height:30px; 
+	display:table; 
+	width:100%;
+}
+.social div{
+	display:inline-block; 
+	width:42%; 
+	color:#eee; 
+	font-size:12px; 
+	text-align:center; 
+	border-radius:3px
+}
+.social div i.fa{
+	font-size:16px; 
+	line-height:30px
+}
+.fb{
+	background:#3B5A9A;
+	 border-bottom:solid 3px #036
+	 } 
+.tw{
+	background:#2CA8D2; 
+	margin-left:16%; 
+	border-bottom:solid 3px #3399CC
+}
+.fb:active{
+	transform: translateY(4px);
+}
+.tw:active{
+	transform: translateY(4px);
+}
+@media(max-width:480px){ .form{width:100%}}
+.backto{background:#09C}
+.backto>a{padding:16px; 
+	margin-bottom:10px; 
+	display:block; 
+	text-align:center; 
+	text-decoration:none; 
+	font-size:16px; 
+	color:#fff}
+
+.alert{
+	width:32%;
+}
+

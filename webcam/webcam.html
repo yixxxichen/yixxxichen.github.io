@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webcam</title>
+    
+    <link rel="stylesheet" type="text/css" href="webcam_styles.css">
+</head>
+
+<body>
+    <div>
+    <ul id="menubar">
+    <li><a href="index.html"> Homepage </a></li>
+    <li><a href="webcam.html"> Webcam</a></li>
+    <li><a href="info.html"> Myinfo </a></li>
+    <li><a href="./webapp/3.1.1/index.html" target = "_blank"> WIFI-Management</a></li>
+    </div>
+
+
+    <h1> The  Webcamera  Image</h1>
+
+     <img id= "picture" class = "img.responsive" src="img.jpg"  width=400px height= 400px alt= "">
+    
+    <p id="startwebcam">If you want to start to transmit the data stream from the webcamera. You can click the button as bellow.</p>
+    <input type="button" id="mybutton" width=40px height=60px title="Click to Start Webcam" onclick="eventlistener()" value="Start Web"> </input>
+    </br>
+
+    <div id = "timeDiv" align="center">
+	    <p id="time">Time Stamp</p>
+	    <input id="timeStamp" align="center" type="text" name="field" value="" size="20"> </input >
+    </div>
+
+    <div id="log">&nbsp;</div>
+    
+</body>
+<script src="webcam_functions.js"></script>
+<script src="info_function.js"></script>
+
+</html>

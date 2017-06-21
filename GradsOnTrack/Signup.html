@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8" />
+<head>
+<title>GradsOnTrack</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- For the table -->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="datepicker.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+
+    <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+    <link rel="stylesheet" href="Signup.css">
+
+</head>
+<body>
+<div class="header"> <h1 align="center"> GradsOnTrack </h1></div>
+<div class="form">
+<div class="header"><h2>Sign Up</h2></div>
+</div>
+<div class="container">
+  <form class="form-horizontal">
+  <div class ="form-group">
+  <label class="control-label col-sm-4" for="email">* = Required</label>
+  </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="email">Email Address *</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" id="email" placeholder="Enter your Email address">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Password *</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter your password">
+      </div>
+    </div>
+		    <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Confirm Password *</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" placeholder="Enter your password again">
+      </div>
+    </div>
+		<!--
+		    <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Birth date</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control"  placeholder="Enter your birth date" type="text" id="datepicker">
+      </div>
+    </div>
+		-->
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">First Name</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control"  placeholder="Enter your first name" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Last Name</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control"  placeholder="Enter your last name" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Institute</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control"  placeholder="Enter your institute" type="text">
+      </div>
+    </div>
+    </form>
+    </div>
+        <div class= "buttonholder">
+         <input type="button" class="btn" onclick="location.href='Login.html';" value="Cancel"/><input type ="button" onclick="location.href='ApplicationsView.html';" value="Sign up" class="btn"/>
+         </div> 
+</body>
+</html>

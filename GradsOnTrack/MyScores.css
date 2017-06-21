@@ -1,0 +1,22 @@
+.container {
+	text-align-last: left;
+	font-size: 18px;
+}
+
+.blank_row
+{
+    height: 20px !important;
+    background-color: #E1F1F7;
+}
+
+#offsetinput {
+	text-align-last: right;
+}
+
+.col-sm-offset-1 col-sm-1 {
+	text-align-last: right;
+}
+
+form td {
+	width: 50%;
+}

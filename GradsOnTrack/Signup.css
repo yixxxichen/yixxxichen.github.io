@@ -1,0 +1,57 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*{margin:0; padding:0}
+body {
+	font-family: 'Source Sans Pro', sans-serif
+}
+label{
+	color:green;
+}
+.form{
+	width:400px; 
+	margin:50px auto; 
+	background:white;
+}
+.header{
+	height:44px; 
+	background:white
+}
+.header h1{
+	margin-top: 50px;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 65px;
+}
+.header h2{
+	height:44px; 
+	line-height:44px; 
+	color:green; 
+	font-size: 40px;
+	font-family: 'Source Sans Pro',sans-serif;
+	text-align:center
+}
+.btn{
+	height:40px; 
+	border:none; 
+	background:green;
+	width:190px; 
+	outline:none; 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size:23px; 
+	font-weight:bold; 
+	color:#EFD469; 
+	border-bottom:solid 3px #093; 
+	border-radius:3px; 
+	border:1px solid white;
+	cursor:pointer
+}
+.btn:hover{
+	background-color: 	green;
+	color:white;
+
+}
+.btn:active{
+	transform: translateY(4px);
+}
+.buttonholder{
+	text-align: center;
+}

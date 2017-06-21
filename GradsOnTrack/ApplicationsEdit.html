@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<!-- GradsOnTrack.html
+
+This document contains the structure of the GradsOnTrack website.
+
+William Ehrich
+EECS 330: Human Computer Interaction
+P5: Computer Prototype 1
+2017-02-08
+
+Sources:
+
+Bootsrap CDN Links
+http://getbootstrap.com/getting-started/
+
+Bootstrap Glyphicons
+http://getbootstrap.com/components/
+
+Bootstrap Navigation Bar
+http://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+-->
+
+<html>
+
+<head>
+	<title>GradsOnTrack</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- For the table -->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- For the navigation bar -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- Personal CSS File -->
+	<link rel="stylesheet" href="GradsOnTrack.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="ApplicationsView.html">&nbsp;&nbsp;GradsOnTrack</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="ApplicationsView.html">My Applications</a></li>
+      <li><a href="MyScoresView1.html">My Scores</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Account.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      <li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" id="centeredTitle">
+  <h1>My Applications</h1>
+</div>
+
+<div class="container">
+  <h2>Application Overview
+	</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+				<th></th>
+        <th>University</th>
+				<th>Subject</th>
+				<th>Type</th>
+				<th>Deadline</th>
+        <th>Fee</th>
+				<th>Paid?</th>
+				<th>LoRs Sent</th>
+				<th>GRE Scores Received</th>
+				<th>SoP Sent</th>
+				<th>Tr Sent</th>
+      </tr>
+    </thead>
+    <tbody>
+		<tr>	
+        <td>
+					<a button type="button" class="btn btn-info" href="ApplicationInfoSchoolA.html">
+						<span class="glyphicon glyphicon-edit"></span>
+					</button></a>
+				</td>
+				<td>School A</td>
+				<td>Materials Science</td>
+				<td>PhD</td>
+				<td> 3/1/2017 </td>
+        <td>$20</td>
+				<td>Yes</td>
+				<td>Yes</td>
+        <td>No</td>
+				<td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+			  <td>
+					<a button type="button" class="btn btn-info" href="ApplicationInfo.html">
+						<span class="glyphicon glyphicon-edit"></span>
+					</button></a>
+				</td>
+        <td>School B</td>
+				<td>Materials Science</td>
+				<td>PhD</td>
+				<td> 3/1/2017 </td>
+        <td>$15</td>
+				<td>No</td>
+        <td>No</td>
+        <td>No</td>
+				<td>No</td>
+        <td>No</td>
+      </tr>
+			<tr>
+			  <td>
+					<a button type="button" class="btn btn-info" href="ApplicationInfo.html">
+						<span class="glyphicon glyphicon-edit"></span>
+					</button></a>
+				</td>
+        <td>School C</td>
+				<td>Materials Science</td>
+				<td>MS</td>
+				<td> 3/1/2017 </td>
+        <td>$10</td>
+				<td>No</td>
+        <td>No</td>
+        <td>No</td>
+				<td>No</td>
+        <td>No</td>
+      </tr>
+			</tbody>
+  </table>
+	<a button type="button" class="btn btn-info" href="ApplicationInfo.html">
+		<span class="glyphicon glyphicon-plus"></span>
+	</button> New</a>
+	<a button type="submit" class="btn btn-default" href="ApplicationsView.html">Cancel</button></a>
+</div>
+
+</body>
+
+</html>

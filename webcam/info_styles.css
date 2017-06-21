@@ -1,0 +1,85 @@
+#menubar{
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #6494ed;
+    font-size:200%;
+    
+}
+
+
+ #menubar >li{
+ 	float:left;
+ }
+
+ #menubar >li>a{
+ 	display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 36px;
+    text-decoration: none;
+    
+}
+
+#menubar li>a:hover:not(.active) {
+    background-color: aliceblue;
+}
+
+
+
+#menubar>li>a{
+	background-color: #6494ed;
+	color: black;
+
+}
+
+img{
+	padding-top: 20px;
+	display:block;
+	margin:auto;
+	border-radius: 30%;
+	
+}
+
+ img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+p{
+	position: absolute;
+    left: 50px;
+    top: 120px;
+     height:20px;
+    color:black;
+    font-size: 150%;
+}
+}
+
+h2{
+	margin-left: 20px;
+	margin-top: 300px;
+    color:blue;
+}
+div{
+	font-size: 100%;
+	padding:150px;
+}
+
+p.emmaname{
+  margin-left:720px;
+  margin-top:630px;
+  font-style:oblique;
+  font-weight:bold;
+  font-size:150%;
+}
+
+
+p.yixiname{
+  margin-left:720px;
+  margin-top:1350px;
+  font-style:oblique;
+  font-weight:bold;
+  font-size:150%;
+}
