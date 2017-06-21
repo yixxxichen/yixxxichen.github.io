@@ -197,6 +197,7 @@ li{
     padding:12px;
 }
 .projectimage{
+    background-color: white;
     width:30em;
     height:20em;
 }
