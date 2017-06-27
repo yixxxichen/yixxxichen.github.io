@@ -201,6 +201,9 @@ li{
     width:30em;
     height:20em;
 }
+#simpleproxy{
+    width:20em;
+}
 /* Medium screens */
 @media all and (max-width: 950px) {
   .nav-bar {
